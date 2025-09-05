@@ -10,16 +10,12 @@
     "packages/**"
   ],
   "packageManager": "yarn@4.9.1",
-  "engines": {
-    "node": ">=18",
-    "yarn": ">=4.0.0"
-  },
   "scripts": {
     "build": "run-p 'build:*'",
     "build:edgeone": "tsx scripts/build-edgeone.ts",
     "build:r": "r -f cjs",
     "build:tsc": "tsc -b tsconfig.lib.json",
-    "clean": "rimraf --glob .type-coverage coverage '.*cache' 'packages/**/{lib,*.tsbuildinfo}' dist",
+    "clean": "rimraf --glob .type-coverage coverage '.*cache' 'packages/**/{lib,*.tsbuildinfo}'",
     "deeplx": "tsx packages/@deeplx/cli/src/cli.ts",
     "edgeone-build": "yarn build:edgeone",
     "format": "prettier --write .",
@@ -41,7 +37,6 @@
     "@deeplx/core": "workspace:*",
     "@octokit/request": "^10.0.0",
     "@pkgr/rollup": "^6.0.3",
-    "@types/web": "^0.0.219",
     "@vercel/node": "^5.1.14",
     "@vitest/coverage-istanbul": "^3.1.1",
     "eslint": "^9.24.0",
