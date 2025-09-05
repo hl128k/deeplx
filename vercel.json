@@ -1,7 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "yarn vercel-build",
-  "installCommand": "yarn install --frozen-lockfile",
   "rewrites": [
     {
       "source": "/(.+)",
