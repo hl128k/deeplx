@@ -39,6 +39,7 @@
     "@pkgr/rollup": "^6.0.3",
     "@vercel/node": "^5.1.14",
     "@vitest/coverage-istanbul": "^3.1.1",
+    "esbuild": "^0.25.9",
     "eslint": "^9.24.0",
     "nano-staged": "^0.8.0",
     "npm-run-all2": "^8.0.0",
