@@ -37,6 +37,7 @@
     "@deeplx/core": "workspace:*",
     "@octokit/request": "^10.0.0",
     "@pkgr/rollup": "^6.0.3",
+    "@types/web": "^0.0.219",
     "@vercel/node": "^5.1.14",
     "@vitest/coverage-istanbul": "^3.1.1",
     "eslint": "^9.24.0",
