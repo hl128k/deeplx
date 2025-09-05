@@ -93,6 +93,13 @@ const indexHtml = `<!DOCTYPE html>
             text-align: center;
             color: #718096;
         }
+        .notice {
+            background: #fef2e8;
+            border: 1px solid #f6ad55;
+            border-radius: 4px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
     </style>
 </head>
 <body>
@@ -101,16 +108,22 @@ const indexHtml = `<!DOCTYPE html>
         
         <p>An unofficial but powerful and easy-to-use yet free DeepL API client.</p>
         
+        <div class="notice">
+            <strong>📍 Note:</strong> This is the documentation page. The actual API endpoint is at <code>/translate</code>
+        </div>
+
         <div class="api-section">
             <h2>API Endpoint</h2>
             <p><strong>Base URL:</strong> <code>/translate</code></p>
+            <p>GET /translate → Returns API usage instructions</p>
+            <p>POST /translate → Performs translation</p>
         </div>
 
         <div class="api-section">
             <h2>Available Methods</h2>
             
             <h3><span class="method get">GET</span> /translate</h3>
-            <p>Returns API usage instructions.</p>
+            <p>Returns API usage instructions (text/plain response).</p>
             
             <h3><span class="method post">POST</span> /translate</h3>
             <p>Translates text using DeepL.</p>
@@ -145,7 +158,11 @@ const indexHtml = `<!DOCTYPE html>
             <h2>Example Usage</h2>
             
             <h4>Using cURL:</h4>
-            <pre><code>curl -X POST /translate \\
+            <pre><code># Get API info
+curl https://your-domain.com/translate
+
+# Translate text
+curl -X POST https://your-domain.com/translate \\
   -H "Content-Type: application/json" \\
   -d '{"text": "Hello", "target_lang": "ZH"}'</code></pre>
             
