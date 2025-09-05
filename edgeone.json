@@ -6,8 +6,8 @@
   "nodeVersion": "22.11.0",
   "rewrites": [
     {
-      "source": "/:path*",
-      "destination": "/edgeone/:path*"
+      "source": "/translate",
+      "destination": "/api/translate"
     }
   ]
 }

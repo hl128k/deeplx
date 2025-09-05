@@ -8,7 +8,7 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "strict": true,
-    "outDir": "./dist/edgeone",
+    "outDir": "./dist/api",
     "lib": ["ES2022", "DOM"],
     "types": []
   },
