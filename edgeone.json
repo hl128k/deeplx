@@ -4,27 +4,10 @@
   "installCommand": "yarn install",
   "outputDirectory": "./dist",
   "nodeVersion": "22.11.0",
-  "functions": [
+  "rewrites": [
     {
-      "name": "translate",
-      "entry": "./edgeone/translate.ts",
-      "route": "/translate",
-      "runtime": "js"
-    }
-  ],
-  "routes": [
-    {
-      "path": "/translate",
-      "function": "translate",
-      "methods": [
-        "GET",
-        "POST",
-        "OPTIONS"
-      ]
-    },
-    {
-      "path": "/",
-      "static": "./public/index.html"
+      "source": "/:path*",
+      "destination": "/edgeone/:path*"
     }
   ]
 }
