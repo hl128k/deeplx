@@ -1,0 +1,25 @@
+{
+  "functions": [
+    {
+      "name": "translate",
+      "entry": "./edgeone/translate.ts",
+      "route": "/translate",
+      "runtime": "js"
+    }
+  ],
+  "routes": [
+    {
+      "path": "/translate",
+      "function": "translate",
+      "methods": [
+        "GET",
+        "POST",
+        "OPTIONS"
+      ]
+    },
+    {
+      "path": "/",
+      "static": "./public/index.html"
+    }
+  ]
+}

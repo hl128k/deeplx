@@ -1,0 +1,23 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "outDir": "./dist/edgeone",
+    "lib": ["ES2022", "DOM"],
+    "types": []
+  },
+  "include": ["edgeone/**/*.ts", "packages/@deeplx/core/src/**/*.ts"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "test",
+    "packages/**/test",
+    "**/*.spec.ts"
+  ]
+}
