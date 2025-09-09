@@ -1,0 +1,7 @@
+{
+  "name": "deeplx",
+  "buildCommand": "yarn edgeone-build",
+  "installCommand": "yarn install",
+  "outputDirectory": "./dist",
+  "nodeVersion": "22.11.0"
+}
